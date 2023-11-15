@@ -1,7 +1,9 @@
 const API_URL = 'http://127.0.0.1:8000/api/v1/'
 
-const url_arr = window.location.pathnameюt.split('/')
-const telegram_id = url_arr[url_arr.length - 2]
+let telegram_id = window.location.pathname.split('=')
+if(telegram_id.length = 2) {
+    telegram_id = telegram_id[1]
+}
 console.log(telegram_id)
 
 fetch(`${API_URL}sign_up`)
