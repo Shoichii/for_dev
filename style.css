@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://images.unsplash.com/photo-1542826522-beb53da5f648?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        height: auto;
+        padding: 20px 10px;
+    }
+}
+
+
+.color-calendar.glass .calendar__days .calendar__day-box {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.color-calendar.glass .calendar__days .calendar__day-selected {
+    background-color: #EC407A;
+    border-radius: 20px;
+}
+
+.calendar__day.calendar__day-active.calendar__day-today.calendar__day-no-event.calendar__day-selected {
+    color: #fff;
+    font-weight: 700;
+}
+
+.color-calendar.glass .calendar__days .calendar__day-today {
+    font-weight: 600;
+    color: #323232;
+}
+
+.calendar__day.calendar__day-active.calendar__day-event {
+    color: #fff;
+    font-weight: 700;
+    background-color: #68ec40;
+    border-radius: 20px;
+}
+
+.color-calendar.glass .calendar__days .calendar__day-bullet {
+    background-color: transparent;
+}
+
+.calendar__day.calendar__day-active.calendar__day-event.calendar__day-selected > .calendar__day-bullet {
+    background-color: #68ec40;
+}
+
+.time {
+    margin-top: 30px;
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding:10px;
+}
+
+.time-item {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.time-item-active {
+    background-color: #68ec40;
+    color: #fff;
+}
