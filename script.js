@@ -1,6 +1,6 @@
 const API_URL = 'http://127.0.0.1:8000/api/v1/'
 
-let telegram_id = window.location.pathname.split('=')
+let telegram_id = window.location.hostname.split('=')
 if(telegram_id.length = 2) {
     telegram_id = telegram_id[1]
 }
